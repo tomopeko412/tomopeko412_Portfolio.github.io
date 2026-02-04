@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+/*ブラウザの既定スタイルを解除する--ここから*/
+
+/*要素の余白をなくす*/
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*リストの行頭アイコンを非表示にする*/
+ul,
+ol {
+  list-style: none;
+}
+
+/*リンクの文字色と下線をなくす*/
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*ブラウザの既定スタイルを解除する--ここまで*/
+html,
+body {
+  overflow: hidden
+}
+
+body {
+  background: #000;
+}
+
+.screen {
+  width: 600px;
+  height: 500px;
+  margin: auto;
+}
+
+img {
+  position: absolute;
+}
+
+ul {
+  width: 600px;
+  margin: auto;
+}
+
+div .history {
+  height: calc(100vh - 500px);
+}
+
+.history li {
+  background: url("img/boytext.png");
+  background-color: #000;
+  width: auto;
+  height: auto;
+  padding: 33px 10px 33px 140px;
+  background-repeat: no-repeat;
+  list-style: none;
+}
+
+.text-log {
+  display: none;
+}
+
+/* チャットログが表示されているとき */
+body .text-log.is-show {
+  display: flex;  /*オーバーレイ表示*/
+  justify-content: center;
+  flex-flow: column;
+
+  position: fixed;
+  top: 0;
+  background-color: rgba(63, 71, 69, 0.863);
+  height: 100vh;
+  margin: 0 auto;
+  width: 600px;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow-x: hidden;  /*横スクロール禁止*/
+}
+
+.text-log h2 {
+  width: 10ch;
+  color: #fff;
+  margin: 30px 0px 0 20px;
+  height: 2.5ex;
+  /* text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.993); */
+  /* position: sticky;  /*特定の位置に固定表示 */
+  background-color: rgba(0, 0, 0, 0.493);
+  text-align: center;
+}
+
+.text-log ul {
+  overflow-y: scroll;
+  margin-bottom: 0;
+}
+
+.text-log li {
+  background: url("img/boytext.png");
+  width: auto;
+  height: auto;
+  padding: 33px 10px 33px 140px;
+  list-style: none;
+  overflow: auto;
+  background-repeat: no-repeat;
+}
+
+.text-log ul li::-webkit-scrollbar-track{
+background-color: rgba(0, 0, 0, 0);
+}
+
+.text-log ul::-webkit-scrollbar-thumb{
+  border-radius: 5px;
+}

@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>hasetomo website</title>
+  <meta name="description" content="webデザイナー「hasetomo」のウェブサイトです。">
+  <meta name="viewport" content="width=device-width">
+  <script src="./js/toggle-menu.js"></script>
+  <link href="./css/common.css" rel="stylesheet">
+  <link href="./css/contact.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!--headerここから-->
+  <header class="header">
+    <div class="header-inner">
+      <a class="header-logo" href="./index.html">
+        <img src="./images/common/logo01.png" alt="hasetomo">
+      </a>
+      <button class="toggle-menu-button"></button>
+      <div class="header-site-menu">
+        <nav class="site-menu">
+          <ul>
+            <li><a href="./profile.html">PROFILE</a></li>
+            <li><a href="./works.html">WORKS</a></li>
+            <li><a href="./survice.html">SURVICE</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!--headerここまで-->
+
+  <!--mainここから-->
+  <main class="main">
+    <div class="title">
+      <h1>CONTACT</h1>
+      <p>ご依頼・お問い合わせ</p>
+    </div>
+
+    <div class="sns-area">
+      <h2>各種SNS</h2>
+      <p>※PHP未実装のためSNSへDMして頂けると幸いです。</p>
+      <ul class="">
+        <li>
+          <p>twitter</p>
+          <a href="https://twitter.com/Htomo28wcw" target="_blank"><img src="./images/common/twitter_white.png"
+              alt="twitterのリンク画像"></a>
+        </li>
+        <li>
+          <p>instgram</p>
+          <a href="https://www.instagram.com/hase_tomo28/" target="_blank"><img src="./images/common/Instgram_white.png"
+              alt="twitterのリンク画像"></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="contact">
+      <h2>お問い合わせフォーム</h2>
+      <form action="#">
+        <dl class="form-area">
+          <dt><span class="required">お名前</span></dt>
+          <dd><input class="input-text" type="text" name="name" required></dd>
+          <dt><span class="required">メールアドレス</span></dt>
+          <dd><input class="input-text" type="email" name="email" required></dd>
+          <dt>お電話番号</dt>
+          <dd><input class="input-text" type="tel" name="tel"></dd>
+          <dt>お問い合わせ種別</dt>
+          <dd>
+            <select class="select-box" name="genre">
+              <option value="依頼">依頼</option>
+              <option value="サービス内容について">サービス内容について</option>
+              <option value="その他お問い合わせ">その他お問い合わせ</option>
+            </select>
+          </dd>
+          <dt>お客様について</dt>
+          <dd>
+            <label class="radio-botton"><input type="radio" name="usertype" value="一般のお客様" checked>新規ご依頼の方</label>
+            <label class="radio-botton"><input type="radio" name="usertype" value="お取引先様">お取引先様</label>
+            <label class="radio-botton"><input type="radio" name="usertype" value="その他">その他</label>
+          </dd>
+          <dt><span class="required">お問い合わせ内容</span></dt>
+          <dd><textarea class="message" name="message" required></textarea></dd>
+        </dl>
+        <p class="confirm-text">ご入力内容をご確認の上、間違いがなければ[submit]ボタンを押してください。</p>
+        <button class="submit-botton" type="submit">Submit</button>
+      </form>
+    </div>
+  </main>
+  <!--mainここまで-->
+
+  <!--footerここから-->
+  <footer class="footer">
+    <nav class="site-menu">
+      <ul>
+        <li><a href="./profile.html">PROFILE</a></li>
+        <li><a href="./works.html">WORKS</a></li>
+        <li><a href="./survice.html">SURVICE</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+    <a class="footer-logo" href="./index.html">
+      <img src="./images/common/logo01.png" alt="hasetomo">
+    </a>
+    <nav class="sns-menu">
+      <!-- ツイッターのフリーアイコンを入れる -->
+      <div class="access">
+        <ul>
+          <!-- twitter -->
+          <li><a href="https://twitter.com/Htomo28wcw" target="_blank"><img src="./images/common/twitter_white.png"
+                class="twitter-img" alt="twitterのリンク画像"></a></li>
+          <!-- target="_blank"で「新しいタブで開く」という処理がされる -->
+          <!-- Instgram -->
+          <li><a href="https://www.instagram.com/hase_tomo28/" target="_blank"><img
+                src="./images/common/Instgram_white.png" class="twitter-img" alt="twitterのリンク画像"></a></li>
+          <!-- blog(comingsoon) -->
+        </ul>
+      </div>
+    </nav>
+    <p class="copyright"><small>&copy;hasetomo</small></p>
+  </footer>
+</body>
+<!--footerここまで-->
+
+</html>
